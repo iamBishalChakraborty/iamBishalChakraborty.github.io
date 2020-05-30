@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bishal's BioData</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/css/mdb.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/css/addons-pro/steppers.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap"
+          rel="stylesheet">
+
+    <style>
+        .fontWeight400 {
+            font-weight: 400;
+        }
+
+        .fontWeight700 {
+            font-weight: 700;
+        }
+
+        .fontWeight600 {
+            font-weight: 600;
+        }
+
+        .fontWeight900 {
+            font-weight: 900;
+        }
+
+        .nunitoText {
+            font-family: 'Nunito', sans-serif;
+        }
+
+
+        .content {
+            transition: all 0.2s ease-in-out;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        /*Color*/
+        .backgroundDark {
+            background-color: #151515;
+        }
+
+        .backgroundLight {
+            background-color: #222222;
+        }
+
+
+        .backgroundOne {
+            background: #3F3F3F;
+        }
+
+        .textColor {
+            color: whitesmoke;
+        }
+
+        .borderColor {
+            background-color: #393939;
+        }
+
+        #myPic {
+            width: 256px;
+            border: 10px solid #393939;
+        }
+
+        .rounded {
+            border-radius: .75rem !important;
+            border-top-left-radius: 0.75rem !important;
+            border-top-right-radius: 0.75rem !important;
+            border-bottom-right-radius: 0.75rem !important;
+            border-bottom-left-radius: 0.75rem !important;
+        }
+
+        .stepper-vertical li:not(:last-child):after {
+            background-color: #ff0000;
+            left: 2.4rem;
+            height: calc(100% - 30px);
+        }
+
+
+    </style>
+</head>
+<body class="backgroundDark fixed-sn black-skin">
+
+<!-- SideNav slide-out button -->
+<a href="#" data-activates="slide-out" class="button-collapse btn-floating blue-gradient"><i
+        class="fad fa-bars fa-2x white-ic"></i></a>
+
+<div id="slide-out" class="side-nav fixed wide sn-bg-3">
+    <ul class="custom-scrollbar">
+        <li>
+            <div class="logo-wrapper sn-ad-avatar-wrapper mt-5">
+                <a href="#"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
+                                 class="rounded-circle"><span>Anna
+            Deynah</span></a>
+            </div>
+        </li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li><a class="collapsible-header waves-effect arrow-r active"><i
+                        class="sv-slim-icon fas fa-chevron-right"></i>
+                    Submit blog<i class="fas fa-angle-down rotate-icon"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#" class="waves-effect active">
+                                <span class="sv-slim"> SL </span>
+                                <span class="sv-normal">Submit listing</span></a>
+                            </li>
+                            <li><a href="#" class="waves-effect">
+                                <span class="sv-slim"> RF </span>
+                                <span class="sv-normal">Registration form</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="collapsible-header waves-effect arrow-r"><i
+                        class="sv-slim-icon far fa-hand-point-right"></i>
+                    Instruction<i class="fas fa-angle-down rotate-icon"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#" class="waves-effect">
+                                <span class="sv-slim"> FB </span>
+                                <span class="sv-normal">For bloggers</span></a>
+                            </li>
+                            <li><a href="#" class="waves-effect">
+                                <span class="sv-slim"> FA </span>
+                                <span class="sv-normal">For authors</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-eye"></i> About<i
+                        class="fas fa-angle-down rotate-icon"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#" class="waves-effect">
+                                <span class="sv-slim"> I </span>
+                                <span class="sv-normal">Introduction</span></a>
+                            </li>
+                            <li><a href="#" class="waves-effect">
+                                <span class="sv-slim"> MM </span>
+                                <span class="sv-normal">Monthly meetings</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon far fa-envelope"></i>
+                    Contact me<i class="fas fa-angle-down rotate-icon"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li>
+                                <a href="#" class="waves-effect">
+                                    <span class="sv-slim"> F </span>
+                                    <span class="sv-normal">FAQ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">
+                                    <span class="sv-slim"> W </span>
+                                    <span class="sv-normal">Write a message</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-left"></i>Minimize
+                    menu</a>
+                </li>
+            </ul>
+        </li>
+        <!--/. Side navigation links -->
+    </ul>
+    <div class="sidenav-bg rgba-blue-strong"></div>
+</div>
+
+<main class="content pt-0">
+    <section id="homePanel" class="my-5">
+        <div class="container mt-5">
+            <div class="text-center">
+                <img id="myPic" src="assets/IMG_1286p.png" class="rounded-circle z-depth-3" alt="">
+                <h1 class="white-text nunitoText fontWeight600 mt-4">Bishal Chakraborty</h1>
+                <p class="h5-responsive white-text nunitoText fontWeight600 mt-3">I'm a Web Developer</p>
+                <div class="social mt-2">
+                    <a class="btn-floating btn-md btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <!--Twitter-->
+                    <a class="btn-floating btn-md btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
+
+                    <a class="btn-floating btn-md btn-li" type="button" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a class="btn-floating btn-md btn-gplus" type="button" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <a class="btn-floating btn-md btn-git" type="button" role="button"><i class="fab fa-github"></i></a>
+
+                    <a class="btn-floating btn-md btn-email" type="button" role="button"><i class="fas fa-envelope"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="aboutMe" class="my-5">
+        <div class="container">
+            <div>
+                <h1 class="white-text nunitoText fontWeight600 mt-4">About Me</h1>
+                <p class="h5-responsive white-text nunitoText fontWeight600 mt-3">I'm a Bishal Chakraborty and <span
+                        class="red-text">Web Developer</span></p>
+                <p class="textColor text-justify nunitoText">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur dolore doloribus, eos
+                    excepturi impedit, ipsa maiores, odit omnis possimus quis unde? Amet ducimus ex illo inventore
+                    perferendis repudiandae voluptatibus!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur dolore doloribus, eos
+                    excepturi impedit, ipsa maiores, odit omnis possimus quis unde? Amet ducimus ex illo inventore
+                    perferendis repudiandae voluptatibus!
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <p><span class="white-text nunitoText fontWeight600">DOB :</span> <span
+                                        class="textColor nunitoText"> 15<sup>th</sup> October 1997 </span></p>
+                                <p><span class="white-text nunitoText fontWeight600">City :</span> <span
+                                        class="textColor nunitoText"> Agartala </span></p>
+                                <p><span class="white-text nunitoText fontWeight600">Parents :</span> <span
+                                        class="textColor nunitoText"> Gopal & Anubha Chakraborty </span></p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p><span class="white-text nunitoText fontWeight600">Age :</span> <span
+                                        class="textColor nunitoText" id="scriptAge"></span></p>
+                                <p><span class="white-text nunitoText fontWeight600">Email :</span> <span
+                                        class="textColor nunitoText">cbishal6@gmail.com </span></p>
+                                <p><span class="white-text nunitoText fontWeight600">Degree :</span> <span
+                                        class="textColor nunitoText"> B.Tech, C.S.E.</span></p>
+                            </div>
+                            <button type="button" class="btn btn-danger btn-rounded nunitoText text-capitalize">Download
+                                CV
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 nunitoText white-text">
+                        <div class="d-flex justify-content-between">
+                            <small>HTML, CSS, Javascript</small>
+                            <small class="text-muted">90</small>
+                        </div>
+                        <div class="progress md-progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: 90%; background-color: #72B626"
+                                 aria-valuenow="<?php echo $firstSem * 9.5; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+
+                        <div class="d-flex justify-content-between">
+                            <small>PHP</small>
+                            <small class="text-muted">80</small>
+                        </div>
+                        <div class="progress md-progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: 80%; background-color: #2196F3"
+                                 aria-valuenow="<?php echo $firstSem * 9.5; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+
+                        <div class="d-flex justify-content-between">
+                            <small>Laravel, Liveware</small>
+                            <small class="text-muted">50</small>
+                        </div>
+                        <div class="progress md-progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: 50%; background-color: #EE3F44"
+                                 aria-valuenow="<?php echo $firstSem * 9.5; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <small>React</small>
+                            <small class="text-muted">40</small>
+
+                        </div>
+                        <div class="progress md-progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: 40%; background-color: #00695c"
+                                 aria-valuenow="<?php echo $firstSem * 9.5; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+
+                        <div class="d-flex justify-content-between">
+                            <small>Blockchain Smart Contract</small>
+                            <small class="text-muted">75</small>
+                        </div>
+                        <div class="progress md-progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: 75%; background-color: #FFB400"
+                                 aria-valuenow="<?php echo $firstSem * 9.5; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+
+                        <div class="d-flex justify-content-between">
+                            <small>Android</small>
+                            <small class="text-muted">80</small>
+                        </div>
+                        <div class="progress md-progress">
+                            <div class="progress-bar" role="progressbar"
+                                 style="width: 80%; background-color: #EE3F44"
+                                 aria-valuenow="<?php echo $firstSem * 9.5; ?>"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-12 col-lg-6">
+
+                        <p class="white-text nunitoText h4-responsive ml-4">Education</p>
+
+                        <div class="z-depth-1 m-2 backgroundLight rounded">
+                            <div class="p-1 rounded">
+
+                                <ul class="stepper stepper-vertical nunitoText white-text">
+
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i> 2016 - 2020</span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <small>Tripura Institute Of Technology, Narsingarh</small>
+                                            <h5 class="mt-1">Bachelor of Computer Science</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error
+                                                excepturi veniam nemo
+                                                repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia
+                                                excepturi adipisci pariatur
+                                                totam,
+                                                atque odit fugiat.</p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i> 2014 - 2016</span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <small>Shishu Niketan H.S.(+2) School, Ranirbazar</small>
+                                            <h5 class="mt-1">Higher Secondary</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error
+                                                excepturi veniam nemo
+                                                repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia
+                                                excepturi adipisci pariatur
+                                                totam,
+                                                atque odit fugiat.</p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i> 2014 </span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <small>Shishu Niketan H.S.(+2) School, Ranirbazar</small>
+                                            <h5 class="mt-1">Secondary</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error
+                                                excepturi veniam nemo
+                                                repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia
+                                                excepturi adipisci pariatur
+                                                totam,
+                                                atque odit fugiat.</p>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-sm-12 col-lg-6">
+
+                        <p class="white-text nunitoText h4-responsive ml-4">Experience</p>
+
+                        <div class="z-depth-1 m-2 backgroundLight rounded">
+                            <div class="p-1 rounded">
+
+                                <ul class="stepper stepper-vertical nunitoText white-text">
+
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i>2019, June - July</span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <h5> Auradix </h5>
+                                            <p><span>Full Stcak Python Web Development with Django</span> <br> <span>Project - India Bulletin News Portal with Django</span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i>2018, June - July</span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <h5> Globsyn Finishing School </h5>
+                                            <p><span>Android App Development using Android Studio 3</span> <br> <span>Project - Vox Chat, Messaging App</span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i>2018, Jan - Feb</span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <h5> MSME Tool Room, Kolkata </h5>
+                                            <p>Core JAVA </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="my-5">
+        <div class="container">
+            <h1 class="white-text nunitoText fontWeight600 mt-4">Services</h1>
+
+
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="card card-cascade wider m-2">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top backgroundLight p-4" src="assets/webDesign.svg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
+
+                            <!-- Title -->
+                            <h4 class="card-title white-text nunitoText"><strong>Web Design</strong></h4>
+
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="card card-cascade wider m-2">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top backgroundLight p-4" src="assets/webDevelopment.svg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
+
+                            <!-- Title -->
+                            <h4 class="card-title white-text nunitoText"><strong>Web Development</strong></h4>
+
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="card card-cascade wider m-2">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top backgroundLight p-4" src="assets/hosting.svg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
+
+                            <!-- Title -->
+                            <h4 class="card-title white-text nunitoText"><strong>Hosting</strong></h4>
+
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="card card-cascade wider m-2">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top backgroundLight p-4" src="assets/design.svg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
+
+                            <!-- Title -->
+                            <h4 class="card-title white-text nunitoText"><strong>Designing</strong></h4>
+
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="card card-cascade wider m-2">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top backgroundLight p-4" src="assets/android.svg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
+
+                            <!-- Title -->
+                            <h4 class="card-title white-text nunitoText"><strong>Android Development</strong></h4>
+
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="card card-cascade wider m-2">
+
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top backgroundLight p-4" src="assets/logo.svg" alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
+
+                            <!-- Title -->
+                            <h4 class="card-title white-text nunitoText"><strong>Logo Design</strong></h4>
+
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+                                doloremque
+                                laudantium, totam rem aperiam. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contactMe" class="mt-5">
+        <div class="container">
+            <h1 class="white-text nunitoText fontWeight600 mt-4">Contact Me</h1>
+
+               <div class="container text-center">
+                   <img src="assets/contact.svg" height="200px" alt="">
+               </div>
+            <div class="container z-depth-3 mt-5 py-4 backgroundLight">
+                <h4 class="text-center font-weight-normal text-white mx-auto my-4 pb-2 nunitoText">I love to hear from you!</h4>
+
+                <form class="mx-md-5" action="">
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+
+                            <!-- Name -->
+                            <label for="name"></label><input type="text" id="name" class="form-control" placeholder="Name">
+
+                        </div>
+                        <div class="col-md-4 mb-4">
+
+                            <!-- Email -->
+                            <label for="email"></label><input type="email" id="email" class="form-control" placeholder="Email">
+
+                        </div>
+                        <div class="col-md-4 mb-4">
+
+                            <!-- Phone -->
+                            <label for="phone"></label><input type="number" id="phone" class="form-control" placeholder="Phone (optional)">
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+
+                            <!-- Subject -->
+                            <label for="subject"></label><input type="text" id="subject" class="form-control" placeholder="Subject">
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="form-group mb-4">
+                                <label for="message"></label><textarea class="form-control rounded" id="message" rows="3"
+                                                                       placeholder="How can we help?"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-elegant">Submit</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </form>
+
+                <!--Section: Content-->
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container-fluid">
+
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 pt-5 pb-1 text-center white-text rounded">
+
+            <p class="h5-responsive nunitoText">Made with <i class="fas fa-heart red-text mx-1"></i> by Bishal Chakraborty</p>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+
+</main>
+<!--/. Sidebar navigation -->
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/popper.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/mdb.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/addons-pro/steppers.min.js"></script>
+<script>
+    $(document).ready(function () {
+// SideNav Button Initialization
+        $(".button-collapse").sideNav({
+            slim: true,
+        });
+    });
+    $(document).ready(function () {
+        $('.stepper').mdbStepper();
+    })
+    $(document).ready(function () {
+        var yearThen = 1997;
+        var monthThen = 10;
+        var dayThen = 15;
+        var today = new Date();
+        var birthday = new Date(yearThen, monthThen - 1, dayThen);
+
+        var differenceInMilisecond = today.valueOf() - birthday.valueOf();
+
+        var year_age = Math.floor(differenceInMilisecond / 31536000000);
+        var day_age = Math.floor((differenceInMilisecond % 31536000000) / 86400000);
+
+        if ((today.getMonth() == birthday.getMonth()) && (today.getDate() == birthday.getDate())) {
+            alert("Happy B'day!!!");
+        }
+
+        var month_age = Math.floor(day_age / 30);
+
+        day_age = day_age % 30;
+        $("#scriptAge").html(year_age + " years " + month_age + " months " + day_age + " days ");
+    });
+
+
+</script>
+</body>
+</html>
