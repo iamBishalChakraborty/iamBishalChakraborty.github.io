@@ -29,6 +29,7 @@
             font-weight: 900;
         }
 
+
         .nunitoText {
             font-family: 'Nunito', sans-serif;
         }
@@ -51,6 +52,7 @@
         .fontColor{
             color: #c0c0c4;
         }
+
 
 
         .backgroundOne {
@@ -100,12 +102,14 @@
                 <a href="#"><img src="assets/IMG_1286p.png"
                                  class="rounded-circle"><span>Bishal Chakraborty</span></a>
             </div>
+
+
         </li>
         <li>
             <ul class="collapsible collapsible-accordion">
                 <li><a class="waves-effect arrow-r" href="#homePanel"><i class="sv-slim-icon fad fa-home-heart fa-lg"></i>Home</a></li>
                 <li><a class="waves-effect arrow-r" href="#aboutMe"><i class="sv-slim-icon fad fa-address-card fa-lg"></i>About Me</a></li>
-                <li><a class="waves-effect arrow-r" href="#services"><i class="sv-slim-icon fad fa-tools fa-lg"></i>Services</a></li>
+                <li><a class="waves-effect arrow-r" href="#services"><i class="sv-slim-icon fad fa-tools fa-lg"></i>My work</a></li>
                 <li><a class="waves-effect arrow-r" href="#contactMe"><i class="sv-slim-icon fad fa-paper-plane fa-lg"></i>Contact Me</a></li>
 
 
@@ -126,7 +130,8 @@
             <div class="text-center">
                 <img id="myPic" src="assets/IMG_1286p.png" class="rounded-circle z-depth-3" alt="">
                 <h1 class="white-text nunitoText fontWeight600 mt-4">Bishal Chakraborty</h1>
-                <p class="h5-responsive white-text nunitoText fontWeight600 mt-3">I'm a Web Developer</p>
+                <p class="h4-responsive white-text nunitoText fontWeight600 mt-3">I'm a <span id="typed" class="text-danger"></span></p>
+
                 <div class="social mt-2">
                     <a class="btn-floating btn-md btn-fb" type="button" role="button" href="https://bit.ly/bishalsFacebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <!--Twitter-->
@@ -148,9 +153,8 @@
     <section id="aboutMe" class="pt-5 my-5">
         <div class="container">
             <div>
-                <h1 class="white-text nunitoText fontWeight600 mt-4">About Me</h1>
-                <p class="h5-responsive white-text nunitoText fontWeight600 mt-3">I'm Bishal Chakraborty and <span
-                        class="red-text">a Web Developer</span></p>
+                <h1 class="nunitoText fontWeight600 mt-4" style="color:#0099FF">About Me</h1>
+                <p class="h5-responsive white-text nunitoText fontWeight600 mt-3">I'm Bishal Chakraborty
                 <p class="textColor text-justify nunitoText">
                     A passionate learner of Science & Technology. A constant seeker of new ideas and innovation. Loves to love Modern technology more and more and apply Modern Technology to invent unreached side of Digital world. Android App and Website stay as lifetime companion and it will always be a try to make them stay throughout the whole life time.
 
@@ -275,13 +279,9 @@
                                         </a>
                                         <div class="step-content text-justify">
                                             <small>Tripura Institute Of Technology, Narsingarh</small>
-                                            <h5 class="mt-1">Bachelor of Computer Science</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error
-                                                excepturi veniam nemo
-                                                repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia
-                                                excepturi adipisci pariatur
-                                                totam,
-                                                atque odit fugiat.</p>
+                                            <h5 class="mt-1">Bachelor of Technology</h5>
+                                            <h5 class="mt-1">Computer Science & Engineering</h5>
+
                                         </div>
                                     </li>
 
@@ -295,12 +295,7 @@
                                         <div class="step-content text-justify">
                                             <small>Shishu Niketan H.S.(+2) School, Ranirbazar</small>
                                             <h5 class="mt-1">Higher Secondary</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error
-                                                excepturi veniam nemo
-                                                repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia
-                                                excepturi adipisci pariatur
-                                                totam,
-                                                atque odit fugiat.</p>
+
                                         </div>
                                     </li>
 
@@ -314,12 +309,7 @@
                                         <div class="step-content text-justify">
                                             <small>Shishu Niketan H.S.(+2) School, Ranirbazar</small>
                                             <h5 class="mt-1">Secondary</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error
-                                                excepturi veniam nemo
-                                                repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia
-                                                excepturi adipisci pariatur
-                                                totam,
-                                                atque odit fugiat.</p>
+
                                         </div>
                                     </li>
 
@@ -346,10 +336,22 @@
                                         <a href="#!">
                                             <span class="circle"></span>
                                             <span class="label white-text ml-3"><i
+                                                    class="fad fa-calendar-alt fa-lg mr-2"></i>2020, July</span>
+                                        </a>
+                                        <div class="step-content text-justify">
+                                            <h5> Intern at Auradix Pvt Ltd</h5>
+                                            <p><span>As Full Stack Developer & Flutter Developer</span> </p>
+                                        </div>
+                                    </li>
+
+                                    <li class="warning">
+                                        <a href="#!">
+                                            <span class="circle"></span>
+                                            <span class="label white-text ml-3"><i
                                                     class="fad fa-calendar-alt fa-lg mr-2"></i>2019, June - July</span>
                                         </a>
                                         <div class="step-content text-justify">
-                                            <h5> Auradix </h5>
+                                            <h5> Auradix Pvt Ltd</h5>
                                             <p><span>Full Stcak Python Web Development with Django</span> <br> <span>Project - India Bulletin News Portal with Django</span>
                                             </p>
                                         </div>
@@ -396,8 +398,7 @@
 
     <section id="services" class="pt-5 my-5">
         <div class="container">
-            <h1 class="white-text nunitoText fontWeight600 mt-4">Services</h1>
-
+            <h1 class="nunitoText fontWeight600 mt-4" style="color:yellow">My Work</h1>
 
             <div class="row mt-5">
                 <div class="col-sm-12 col-md-6 col-lg-4">
@@ -419,7 +420,7 @@
                             <!-- Title -->
                             <h4 class="card-title white-text nunitoText"><strong>Web Design</strong></h4>
 
-                            <p class="card-text text-justify fontColor">Web page designing is one of the most crucial part of Web Development. Includes the whole front end development of a full website with attractive designs and proper detailed information.</p>
+                            <p class="card-text fontColor">Web page designing is one of the most crucial part of Web Development. Includes the whole front end development of a full website with attractive designs and proper detailed information.</p>
                         </div>
 
                     </div>
@@ -444,64 +445,8 @@
                             <!-- Title -->
                             <h4 class="card-title white-text nunitoText"><strong>Web Development</strong></h4>
 
-                            <p class="card-text text-justify fontColor">Includes the full part of website development consisting of front end as well as back end development. Back end is developed with the help of php (my sql) database as well as Django platform using python language.
+                            <p class="card-text fontColor">Includes the full part of website development consisting of front end as well as back end development. Back end is developed with the help of php (my sql) database as well as Django platform using python language.
                             </p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-
-                    <div class="card card-cascade wider m-2">
-
-                        <!-- Card image -->
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top backgroundLight p-4" src="assets/hosting.svg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
-
-                            <!-- Title -->
-                            <h4 class="card-title white-text nunitoText"><strong>Hosting</strong></h4>
-
-                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
-                                doloremque
-                                laudantium, totam rem aperiam. </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row mt-3">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-
-                    <div class="card card-cascade wider m-2">
-
-                        <!-- Card image -->
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top backgroundLight p-4" src="assets/design.svg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
-
-                            <!-- Title -->
-                            <h4 class="card-title white-text nunitoText"><strong>Designing</strong></h4>
-
-                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
-                                doloremque
-                                laudantium, totam rem aperiam. </p>
                         </div>
 
                     </div>
@@ -523,106 +468,48 @@
                         <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
 
                             <!-- Title -->
-                            <h4 class="card-title white-text nunitoText"><strong>Android Development</strong></h4>
+                            <h4 class="card-title white-text nunitoText"><strong>Android / IOS Development</strong></h4>
 
-                            <p class="card-text text-justify fontColor">Includes full front end as well as back end app development using Android studio / Flutter making the app looking more attractive, useful and informative.
+                            <p class="card-text fontColor">Includes full front end as well as back end app development using Android studio / Flutter making the app looking more attractive, useful and informative.
                             </p>
                         </div>
 
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-
-                    <div class="card card-cascade wider m-2">
-
-                        <!-- Card image -->
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top backgroundLight p-4" src="assets/logo.svg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade text-center p-4" style="background: #222222">
-
-                            <!-- Title -->
-                            <h4 class="card-title white-text nunitoText"><strong>Logo Design</strong></h4>
-
-                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
-                                doloremque
-                                laudantium, totam rem aperiam. </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
             </div>
-
 
         </div>
     </section>
 
     <section id="contactMe" class="pt-5 mt-5">
         <div class="container">
-            <h1 class="white-text nunitoText fontWeight600 mt-4">Contact Me</h1>
+            <h1 class="nunitoText fontWeight600 mt-4 blueViolet" style="color:#944DFF">Let's Connect</h1>
 
                <div class="container text-center">
                    <img src="assets/contact.svg" height="200px" alt="">
                </div>
-            <div class="container z-depth-3 mt-5 py-4 backgroundLight">
-                <h4 class="text-center font-weight-normal text-white mx-auto my-4 pb-2 nunitoText">I love to hear from you!</h4>
 
-                <form class="mx-md-5" action="">
 
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
+            <div class="container z-depth-3 mt-5 py-4 backgroundLight text-center">
+                <h5 class="text-center font-weight-normal text-white mx-auto my-4 pb-2 nunitoText">I can't wait to learn even more :) Feel free to reach out to me on any of these platforms!</h5>
 
-                            <!-- Name -->
-                            <label for="name"></label><input type="text" id="name" class="form-control" placeholder="Name">
 
-                        </div>
-                        <div class="col-md-4 mb-4">
+                <div class="social mt-2">
+                    <a class="btn-floating btn-md btn-fb" type="button" role="button" href="https://bit.ly/bishalsFacebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <!--Twitter-->
+                    <a class="btn-floating btn-md btn-tw" type="button" role="button" href="https://bit.ly/bishalsTwitter" target="_blank"><i class="fab fa-twitter"></i></a>
 
-                            <!-- Email -->
-                            <label for="email"></label><input type="email" id="email" class="form-control" placeholder="Email">
+                    <a class="btn-floating btn-md btn-li" type="button" role="button" href="https://bit.ly/bishalsLinkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 
-                        </div>
-                        <div class="col-md-4 mb-4">
+                    <a class="btn-floating btn-md btn-gplus" type="button" role="button" href="https://bit.ly/bishalsInstagram" target="_blank"><i class="fab fa-instagram"></i></a>
 
-                            <!-- Phone -->
-                            <label for="phone"></label><input type="number" id="phone" class="form-control" placeholder="Phone (optional)">
+                    <a class="btn-floating btn-md btn-git" type="button" role="button" href="https://bit.ly/bishalsGithub" target="_blank"><i class="fab fa-github"></i></a>
 
-                        </div>
-                    </div>
+                    <a class="btn-floating btn-md btn-email" type="button" role="button" href="mailto:cbishal6@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12 mb-4">
-
-                            <!-- Subject -->
-                            <label for="subject"></label><input type="text" id="subject" class="form-control" placeholder="Subject">
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <div class="form-group mb-4">
-                                <label for="message"></label><textarea class="form-control rounded" id="message" rows="3"
-                                                                       placeholder="How can we help?"></textarea>
-                            </div>
-
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-elegant">Submit</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </form>
+                <h5 class="text-center font-weight-normal text-white mx-auto my-4 pb-2 nunitoText">I love to hear from you!</h5>
 
                 <!--Section: Content-->
 
@@ -660,6 +547,9 @@
         src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/mdb.min.js"></script>
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/gh/iamBishalChakraborty/frameworkmdb/js/addons-pro/steppers.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
 <script>
     $(document).ready(function () {
 // SideNav Button Initialization
@@ -670,6 +560,15 @@
     $(document).ready(function () {
         $('.stepper').mdbStepper();
     })
+
+    var typed = new Typed('#typed', {
+        strings: ["Designer", "Developer", "Freelancer"],
+        typeSpeed: 75,
+        backSpeed: 65,
+        loop: true,
+    });
+
+
     $(document).ready(function () {
         var yearThen = 1997;
         var monthThen = 10;
@@ -708,9 +607,6 @@
             $(this).addClass('active'); //set the active class on the nav-item that called the function
         });
     });
-
-
-
 </script>
 </body>
 </html>
