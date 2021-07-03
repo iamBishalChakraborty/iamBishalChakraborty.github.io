@@ -77,6 +77,7 @@
       <workItem from="1605718272501" duration="116000" />
       <workItem from="1614607859777" duration="443000" />
       <workItem from="1614608539627" duration="255000" />
+      <workItem from="1615868369126" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="Delete contact me form">
       <created>1597656409751</created>
@@ -162,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614608660642</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CV Modify">
+      <created>1615868415139</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615868415139</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +196,7 @@
     <MESSAGE value="Graduate" />
     <MESSAGE value="Progress" />
     <MESSAGE value="popup-remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="popup-remove" />
+    <MESSAGE value="CV Modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="CV Modify" />
   </component>
 </project>
